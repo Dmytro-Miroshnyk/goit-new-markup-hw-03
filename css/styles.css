@@ -56,8 +56,11 @@ body {
 
 .list {
   list-style-type: none;
+  list-style: none;
 }
-
+.link {
+  text-decoration: none;
+}
 .navigation-list-link {
   color: var(--dark-color);
   font-size: 16px;
@@ -181,6 +184,19 @@ body {
 .portfolio-list-image {
 }
 .portfolio-list-title {
+  color: var(--dark-color);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 .portfolio-list-text {
+  color: var(--text-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
