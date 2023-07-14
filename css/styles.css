@@ -132,9 +132,9 @@ body {
   letter-spacing: 0.02em;
 }
 .team-list {
-  background-color: var(--white-background-color);
 }
 .team-list-item {
+  background-color: var(--white-background-color);
 }
 .team-list-image {
 }
