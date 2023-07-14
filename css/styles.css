@@ -161,6 +161,7 @@ body {
 .portfolio-filter-button {
 }
 .button {
+  font-family: "Roboto", sans-serif;
   color: var(--primary-brand-color);
   background-color: var(--light-color);
   border-radius: 4px;
