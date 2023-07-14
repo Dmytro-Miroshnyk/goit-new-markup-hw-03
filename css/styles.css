@@ -41,7 +41,7 @@ body {
   line-height: 1.5;
 }
 .logo {
-  color: var(--primary-brand-color)
+  color: var(--primary-brand-color);
   font-family: var(--secondary-font);
   font-size: 18px;
   font-weight: 800;
