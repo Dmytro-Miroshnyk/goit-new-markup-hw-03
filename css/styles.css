@@ -41,17 +41,17 @@ body {
   line-height: 1.5;
 }
 .logo {
-  color: var(--dark-color);
+  color: var(--primary-brand-color)
   font-family: var(--secondary-font);
   font-size: 18px;
   font-weight: 800;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
 }
-.logo-blue {
-  color: var(--primary-brand-color);
+.logo-black {
+  color: var(--dark-color);
 }
 
 .list {
@@ -70,7 +70,9 @@ body {
   line-height: 1.5;
   text-decoration: none;
 }
-
+.adress {
+  font-style: normal;
+}
 .adress-list-link {
   color: var(--text-color);
   font-size: 16px;
