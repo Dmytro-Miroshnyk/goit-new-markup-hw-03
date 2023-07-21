@@ -15,6 +15,10 @@
   --white-background-color: #ffffff;
   --modal-background-color: #fcfcfc;
 }
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   font-family: var(--primary-font);
   color: var(--text-color);
@@ -86,8 +90,19 @@ ol {
   list-style-type: none;
 }
 .header {
+  display: flex;
   padding-top: 25.5px;
   padding-bottom: 25.5px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 76px;
+}
+.navigation-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .navigation-list-link {
   color: var(--dark-color);
@@ -98,6 +113,12 @@ ol {
 }
 .adress {
   font-style: normal;
+  margin-left: auto;
+}
+.adress-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .adress-list-link {
   color: var(--text-color);
@@ -112,14 +133,19 @@ ol {
 }
 .hero-title {
   color: var(--white-background-color);
-  text-align: center;
   max-width: 496px;
+  text-align: center;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-button {
+  display: flex;
+  padding: 16px 32px;
+  margin-left: calc(50% - 105px);
   font-family: "Roboto", sans-serif;
   color: var(--white-background-color);
   background-color: var(--primary-brand-color);
@@ -129,6 +155,8 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .visually-hidden {
   position: absolute;
@@ -144,10 +172,13 @@ ol {
   overflow: hidden;
 }
 .advantages-list {
+  display: flex;
+  gap: 24px;
   padding-top: 120px;
   padding-bottom: 120px;
 }
 .advantage-list-item {
+  width: calc((100% - 3 * 24px) / 4);
 }
 .advantage-list-title {
   letter-spacing: 0.02em;
@@ -163,6 +194,8 @@ ol {
   padding-bottom: 72px;
 }
 .activity-list {
+  display: flex;
+  gap: 24px;
   padding-bottom: 120px;
 }
 .activity-list-item {
@@ -180,6 +213,8 @@ ol {
   padding-bottom: 72px;
 }
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 .team-list-item {
   background-color: var(--white-background-color);
@@ -187,15 +222,27 @@ ol {
 .team-list-image {
 }
 .team-list-title {
+  max-width: fit-content;
+  align-items: center;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .team-list-text {
+  max-width: fit-content;
   color: var(--text-color);
+  margin-left: auto;
+  margin-right: auto;
 }
 .list-wrap {
   padding-top: 32px;
   padding-bottom: 32px;
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .footer {
   background-color: var(--dark-color);
@@ -206,6 +253,7 @@ ol {
   color: var(--light-color);
 }
 .footer-text {
+  max-width: 264px;
   color: var(--light-color);
   font-size: 16px;
   line-height: 1.5;
@@ -215,15 +263,28 @@ ol {
   padding-top: 96px;
   padding-bottom: 120px;
 }
-.portfolio .list-wrap {
+.portfolio-list-wrap {
   padding-left: 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border: 1px solid var(--accent-color);
+  background: var(--white-background-color);
 }
 .portfolio-filter {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
   padding-bottom: 72px;
 }
 .portfolio-filter-button {
+  border-radius: 4px;
+  border: 1px solid var(--accent-color);
 }
 .button {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
   font-family: "Roboto", sans-serif;
   color: var(--primary-brand-color);
   background-color: var(--light-color);
@@ -234,6 +295,7 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border-radius: 4px;
 }
 .button:hover,
 .button:focus,
@@ -241,6 +303,8 @@ ol {
 .hero-button:focus {
   color: var(--white-background-color);
   background-color: var(--pressed-state-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 .navigation-list-link:hover,
 .navigation-list-link:focus,
@@ -250,10 +314,14 @@ ol {
 }
 
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 .portfolio-list-item {
 }
 .portfolio-list-image {
+
 }
 .portfolio-list-title {
   color: var(--dark-color);
