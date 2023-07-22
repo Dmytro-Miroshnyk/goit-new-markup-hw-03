@@ -94,12 +94,13 @@ img {
   list-style-type: none;
 }
 .header {
+  padding-top: 25.5px;
+  padding-bottom: 25.5px;
   border-bottom: 1px solid var(--accent-color);
 }
 .container-header {
   display: flex;
-  padding-top: 25.5px;
-  padding-bottom: 25.5px;
+  padding: 0 15px;
 }
 .navigation {
   display: flex;
