@@ -93,11 +93,13 @@ img {
   text-decoration: none;
   list-style-type: none;
 }
+.container-header {
+  border-bottom: 1px solid var(--accent-color);
+}
 .header {
   display: flex;
   padding-top: 25.5px;
   padding-bottom: 25.5px;
-  border-bottom: 1px solid var(--accent-color);
 }
 .navigation {
   display: flex;
