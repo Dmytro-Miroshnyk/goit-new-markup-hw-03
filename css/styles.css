@@ -93,9 +93,6 @@ img {
   text-decoration: none;
   list-style-type: none;
 }
-header .container {
-  display: flex;
-}
 .header {
   display: flex;
   padding-top: 25.5px;
@@ -233,9 +230,9 @@ header .container {
 }
 .team-list-item {
   background-color: var(--white-background-color);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-list-image {
-  border-radius: 0px 0px 4px 4px;
 }
 .team-list-title {
   max-width: fit-content;
