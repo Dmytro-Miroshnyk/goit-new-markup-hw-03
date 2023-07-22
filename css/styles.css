@@ -42,6 +42,9 @@ ol {
   margin-top: 0;
   margin-bottom: 0;
 }
+img {
+  display: block;
+}
 .container {
   width: 100%;
   max-width: 1158px;
@@ -75,6 +78,7 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  margin-right: 76px;
 }
 .logo-black {
   color: var(--dark-color);
@@ -89,20 +93,24 @@ ol {
   text-decoration: none;
   list-style-type: none;
 }
+header .container {
+  display: flex;
+}
 .header {
   display: flex;
   padding-top: 25.5px;
   padding-bottom: 25.5px;
+  border-bottom: 1px solid var(--accent-color);
 }
 .navigation {
   display: flex;
   align-items: center;
-  gap: 76px;
 }
 .navigation-list {
   display: flex;
   align-items: center;
   gap: 40px;
+  margin-right: auto;
 }
 .navigation-list-link {
   color: var(--dark-color);
@@ -110,6 +118,7 @@ ol {
   font-weight: 500;
   line-height: 1.5;
   text-decoration: none;
+  padding: 24px 0;
 }
 .adress {
   font-style: normal;
@@ -143,16 +152,20 @@ ol {
   margin-right: auto;
 }
 .hero-button {
-  display: flex;
+  display: block;
+  border: none;
   padding: 16px 32px;
-  margin-left: calc(50% - 105px);
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Roboto", sans-serif;
   color: var(--white-background-color);
   background-color: var(--primary-brand-color);
   text-align: center;
   font-size: 16px;
+  min-width: 169px;
   font-weight: 500;
   line-height: 1.5;
+  height: 56px;
   letter-spacing: 0.04em;
   cursor: pointer;
   border-radius: 4px;
@@ -171,27 +184,29 @@ ol {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.advantages {
+  padding: 120px 0;
+}
 .advantages-list {
   display: flex;
   gap: 24px;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
-.advantage-list-item {
+.advantages-list-item {
   width: calc((100% - 3 * 24px) / 4);
 }
-.advantage-list-title {
+.advantages-list-title {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
-.advantage-list-text {
+.advantages-list-text {
   color: var(--text-color);
 }
 .activity {
+  padding-bottom: 120px;
 }
 .activity-title {
   text-align: center;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .activity-list {
   display: flex;
@@ -210,7 +225,7 @@ ol {
 .team-title {
   text-align: center;
   letter-spacing: 0.02em;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .team-list {
   display: flex;
@@ -220,9 +235,11 @@ ol {
   background-color: var(--white-background-color);
 }
 .team-list-image {
+  border-radius: 0px 0px 4px 4px;
 }
 .team-list-title {
   max-width: fit-content;
+  text-align: center;
   align-items: center;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
@@ -231,6 +248,7 @@ ol {
 }
 .team-list-text {
   max-width: fit-content;
+  text-align: center;
   color: var(--text-color);
   margin-left: auto;
   margin-right: auto;
@@ -246,8 +264,11 @@ ol {
 }
 .footer {
   background-color: var(--dark-color);
-  padding-top: 101.5px;
-  padding-bottom: 100px;
+  padding: 100px 0;
+}
+footer .logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .logo-white {
   color: var(--light-color);
@@ -257,24 +278,16 @@ ol {
   color: var(--light-color);
   font-size: 16px;
   line-height: 1.5;
-  margin-top: 17.5px;
 }
 .portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
 }
-.portfolio-list-wrap {
-  padding-left: 16px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  border: 1px solid var(--accent-color);
-  background: var(--white-background-color);
-}
 .portfolio-filter {
   display: flex;
   justify-content: center;
   gap: 24px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .portfolio-filter-button {
   border-radius: 4px;
@@ -298,7 +311,13 @@ ol {
   border-radius: 4px;
 }
 .button:hover,
-.button:focus,
+.button:focus {
+  color: var(--white-background-color);
+  background-color: var(--pressed-state-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
+}
 .hero-button:hover,
 .hero-button:focus {
   color: var(--white-background-color);
@@ -317,11 +336,17 @@ ol {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
 }
 .portfolio-list-item {
 }
 .portfolio-list-image {
-
+}
+.portfolio-list-wrap {
+  padding: 32px 16px;
+  border: 1px solid var(--accent-color);
+  border-top: none;
+  background: var(--white-background-color);
 }
 .portfolio-list-title {
   color: var(--dark-color);
