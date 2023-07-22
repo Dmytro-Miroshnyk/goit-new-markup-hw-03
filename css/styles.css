@@ -93,10 +93,10 @@ img {
   text-decoration: none;
   list-style-type: none;
 }
-.container-header {
+.header {
   border-bottom: 1px solid var(--accent-color);
 }
-.header {
+.container-header {
   display: flex;
   padding-top: 25.5px;
   padding-bottom: 25.5px;
