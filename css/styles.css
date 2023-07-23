@@ -78,10 +78,10 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  margin-right: 76px;
 }
 .logo-black {
   color: var(--dark-color);
+  margin-right: 76px;
 }
 
 .list {
@@ -211,7 +211,6 @@ img {
 .activity-list {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
 }
 .activity-list-item {
 }
@@ -238,13 +237,10 @@ img {
 .team-list-image {
 }
 .team-list-title {
-  max-width: fit-content;
   text-align: center;
   align-items: center;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .team-list-text {
   max-width: fit-content;
